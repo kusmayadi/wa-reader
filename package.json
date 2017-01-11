@@ -1,6 +1,6 @@
 {
   "name": "wa-reader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utility for reading WhatsApp chat file",
   "main": "./src/wa_reader.js",
   "scripts": {
