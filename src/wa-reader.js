@@ -20,8 +20,8 @@ module.exports = {
     patterns.createPattern('%{HOUR}:%{MINUTE}', 'WA_TIME');
     patterns.createPattern('(.*\n)+', 'WA_CHAT')
 
-    var waChat  = '%{DATE:date}, %{WA_TIME:time} - %{DATA:sender}: %{WA_CHAT:chat}';
-    var waSystem = '%{DATE:date}, %{WA_TIME:time} - %{WA_CHAT:chat}';
+    var waChat  = '%{DATE:date}, %{WA_TIME:time} - %{DATA:sender}: %{WA_CHAT:message}';
+    var waSystem = '%{DATE:date}, %{WA_TIME:time} - %{WA_CHAT:message}';
 
     var waChatPattern = patterns.createPattern(waChat);
     var waSystemPattern = patterns.createPattern(waSystem);

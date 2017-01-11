@@ -58,7 +58,7 @@ describe('wa-reader', function() {
 
     it('should return an array of object with chat key', function(done) {
       wa.parse(chatText, function(err, conversations) {
-        conversations[1].should.have.property('chat');
+        conversations[1].should.have.property('message');
         done();
       });
     });
@@ -72,7 +72,7 @@ describe('wa-reader', function() {
 
     it('should return an array of object with chat key even if chats is only has one line chat', function(done) {
       wa.parse(oneLineChatText, function(err, conversations) {
-        conversations[0].should.have.property('chat');
+        conversations[0].should.have.property('message');
         done();
       });
     });
